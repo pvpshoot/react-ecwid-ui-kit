@@ -1,11 +1,18 @@
 {
   "name": "react-ecwid-ui-kit",
-  "version": "0.0.1",
-  "description": "Implementation of Ecwid CSS fraimwork for react",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.9.5"
   },
-  "author": "pvpshoot",
-  "license": "ISC"
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

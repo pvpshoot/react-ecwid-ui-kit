@@ -1,21 +1,36 @@
+// @flow
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import { Button } from './components'
+
+
 import './App.css';
 
 class App extends Component {
+
+  click = () => alert(123);
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+        <h2>Buttons: </h2>
+        <p>
+          <Button onPress={this.click}>Default</Button>
+          <Button type="alt">alt</Button>
+          <Button type="primary">primary</Button>
+          <Button type="info-light">info-light</Button>
+          <Button type="warning">warning</Button>
+        </p>
+        <p>
+          <Button inProgress onPress={this.click}>Default</Button>
+          <Button inProgress type="alt">alt</Button>
+          <Button inProgress type="primary">primary</Button>
+          <Button inProgress type="info-light">info-light</Button>
+          <Button inProgress type="warning">warning</Button>
         </p>
       </div>
     );
   }
 }
+
 
 export default App;

@@ -1,7 +1,9 @@
-// @flow
 import React, { Component } from 'react';
 
-import { Button } from './components'
+import {
+  Button,
+  Input,
+} from './components';
 
 
 import './App.css';
@@ -27,6 +29,16 @@ class App extends Component {
           <Button inProgress type="info-light">info-light</Button>
           <Button inProgress type="warning">warning</Button>
         </p>
+
+        <h2>Form: </h2>
+        <div style={{ width: '50%' }}>
+          <Input type="search" onChange={console.log} />
+          <Input type="search" onChange={console.log} status="success" />
+          <Input type="search" onChange={console.log} status="error" />
+          <Input type="search" onChange={console.log} disabled />
+          <Input type="search" onChange={console.log} group="@#$" />
+          <Input type="search" onChange={console.log} suffix="suffix" prefix="prefix" />
+        </div>
       </div>
     );
   }

@@ -4,6 +4,7 @@ import {
   Button,
   Input,
   RadioGroup,
+  CheckBox,
 } from './components';
 
 
@@ -63,6 +64,13 @@ class App extends Component {
         <h2>Radio:</h2>
         <div >
           <RadioGroup dataList={TEST_DATA} onChange={console.log} />
+        </div>
+        <h2>Radio:</h2>
+        <div >
+          <CheckBox name="one" onChange={console.log} />
+          <CheckBox name="one" onChange={console.log} labelOn="LOL" labelOff="KEK" />
+          <CheckBox name="one" onChange={console.log} disabled />
+          <CheckBox name="one" onChange={console.log} size="tiny" />
         </div>
       </div>
     );

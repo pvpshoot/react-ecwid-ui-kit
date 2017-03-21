@@ -3,10 +3,30 @@ import React, { Component } from 'react';
 import {
   Button,
   Input,
+  RadioGroup,
 } from './components';
 
 
 import './App.css';
+
+const TEST_DATA = [
+  {
+    value: 1,
+    label: 'Label',
+  },
+  {
+    value: 2,
+    note: 'with note',
+  },
+  {
+    value: 3,
+    disabled: true,
+  },
+  {
+    value: 4,
+    checked: true,
+  },
+];
 
 class App extends Component {
 
@@ -38,6 +58,11 @@ class App extends Component {
           <Input type="search" onChange={console.log} disabled />
           <Input type="search" onChange={console.log} group="@#$" />
           <Input type="search" onChange={console.log} suffix="suffix" prefix="prefix" />
+        </div>
+
+        <h2>Radio:</h2>
+        <div >
+          <RadioGroup dataList={TEST_DATA} onChange={console.log} />
         </div>
       </div>
     );

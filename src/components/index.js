@@ -7,6 +7,7 @@ import Radio from './Radio';
 import RadioGroup from './RadioGroup';
 import CheckBox from './Checkbox';
 import Select from './Select';
+import Icon from './Icon';
 
 export {
     Button,
@@ -16,4 +17,5 @@ export {
     RadioGroup,
     CheckBox,
     Select,
+    Icon,
 };

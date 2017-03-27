@@ -7,6 +7,7 @@ import {
   RadioGroup,
   CheckBox,
   Select,
+  Icon,
 } from './components';
 
 
@@ -77,6 +78,10 @@ class App extends Component {
         <h2>Select:</h2>
         <div >
           <Select options={TEST_DATA} onChange={console.log} />
+        </div>
+        <h2>Icon:</h2>
+        <div >
+          <Icon name="customer_groups" />
         </div>
       </div>
     );

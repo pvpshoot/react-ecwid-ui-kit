@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Code from './helpers/Highlighter';
 
 import {
   Button,
   Input,
   RadioGroup,
   CheckBox,
+  Select,
 } from './components';
 
 
@@ -34,7 +36,7 @@ class App extends Component {
   click = () => alert(123);
   render() {
     return (
-      <div className="App">
+      <div className="wrapper normalized">
         <h2>Buttons: </h2>
         <p>
           <Button onPress={this.click}>Default</Button>
@@ -65,12 +67,16 @@ class App extends Component {
         <div >
           <RadioGroup dataList={TEST_DATA} onChange={console.log} />
         </div>
-        <h2>Radio:</h2>
+        <h2>Checkboxes:</h2>
         <div >
           <CheckBox name="one" onChange={console.log} />
           <CheckBox name="one" onChange={console.log} labelOn="LOL" labelOff="KEK" />
           <CheckBox name="one" onChange={console.log} disabled />
           <CheckBox name="one" onChange={console.log} size="tiny" />
+        </div>
+        <h2>Select:</h2>
+        <div >
+          <Select options={TEST_DATA} onChange={console.log} />
         </div>
       </div>
     );

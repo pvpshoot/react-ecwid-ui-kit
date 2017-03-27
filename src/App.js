@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Code from './helpers/Highlighter';
 
 import {
   Button,
@@ -8,6 +7,7 @@ import {
   CheckBox,
   Select,
   Icon,
+  Link,
 } from './components';
 
 
@@ -82,6 +82,10 @@ class App extends Component {
         <h2>Icon:</h2>
         <div >
           <Icon name="customer_groups" />
+        </div>
+        <h2>Link:</h2>
+        <div >
+          <Link href="#">LINK</Link>
         </div>
       </div>
     );

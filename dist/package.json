@@ -1,0 +1,24 @@
+{
+  "name": "react-ecwid-ui-kit",
+  "version": "0.1.2",
+  "main": "./components/index.js",
+  "keywords": [
+    "react",
+    "ecwid",
+    "ui-kit"
+  ],
+  "author": "Mike Sinyakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pvpshoot/react-ecwid-ui-kit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pvpshoot/react-ecwid-ui-kit.git"
+  },
+  "dependencies": {
+    "ramda": "^0.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

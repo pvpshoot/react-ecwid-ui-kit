@@ -8,7 +8,7 @@ import {
   Select,
   Icon,
   Link,
-} from './components';
+} from './react-ecwid-ui-kit/components';
 
 
 import './App.css';

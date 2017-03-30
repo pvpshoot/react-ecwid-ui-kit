@@ -3,7 +3,7 @@ import {
   or,
   F,
 } from 'ramda';
-import Radio, { propTypes } from './Radio';
+import Radio, { propTypes } from '../Radio';
 
 const getRandomId = () => Math.random().toString(36).substring(7);
 

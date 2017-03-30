@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-function Link(props, x) {
+function Link(props) {
   const {
     href,
     children,
@@ -8,7 +8,6 @@ function Link(props, x) {
     inverse,
 } = props;
 
-  console.log(x);
   const getDisabledClass = b => (b ? 'disabled' : '');
   const getInverseClass = b => (b ? 'link-inverse' : '');
 

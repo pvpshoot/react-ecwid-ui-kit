@@ -1,7 +1,6 @@
 import '../css/ecwid.css';
 
 import Button from './Button';
-import Loader from './Loader';
 import Input from './Input';
 import Radio from './Radio';
 import RadioGroup from './RadioGroup';
@@ -10,9 +9,10 @@ import Select from './Select';
 import Icon from './Icon';
 import Link from './Link';
 
+
+document.body.className += ' normalized';
 export {
     Button,
-    Loader,
     Input,
     Radio,
     RadioGroup,

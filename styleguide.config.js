@@ -4,6 +4,7 @@ module.exports = {
   title: 'React Ecwid Ui kit',
   // defaultExample: true,
   components: './src/react-ecwid-ui-kit/components/**/*.js',
+  styleguideDir: 'docs',
   updateWebpackConfig(webpackConfig) {
     const dir = path.resolve(__dirname, 'src');
     webpackConfig.module.loaders.push({

@@ -1,6 +1,6 @@
 {
   "name": "react-ecwid-ui-kit",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "./components/index.js",
   "keywords": [
     "react",

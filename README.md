@@ -2,7 +2,7 @@ This project is my attempt to create React component lib for  [Ecwid CSS Framewo
 
 
 ## Components
-  ...Coming soon!
+  [Check it here](https://pvpshoot.github.io/react-ecwid-ui-kit/)
 
 ## Requirements
   ...Coming soon!

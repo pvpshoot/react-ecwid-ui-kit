@@ -8,6 +8,7 @@ import CheckBox from './Checkbox';
 import Select from './Select';
 import Icon from './Icon';
 import Link from './Link';
+import Grid from './Grid'
 
 
 document.body.className += ' normalized';

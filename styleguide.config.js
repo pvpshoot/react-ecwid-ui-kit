@@ -3,7 +3,17 @@ const path = require('path');
 module.exports = {
   title: 'React Ecwid Ui kit',
   // defaultExample: true,
-  components: './src/react-ecwid-ui-kit/components/**/*.js',
+  sections: [
+    {
+      name: 'Grid system',
+      content: './src/react-ecwid-ui-kit/components/Grid/Readme.md',
+    },
+    {
+      name: 'UI Components',
+      // content: 'docs/ui.md',
+      components: './src/react-ecwid-ui-kit/components/**/*.js'
+    }
+  ],
   styleguideDir: 'docs',
   updateWebpackConfig(webpackConfig) {
     const dir = path.resolve(__dirname, 'src');
@@ -18,7 +28,7 @@ module.exports = {
           // directory for faster rebuilds.
         cacheDirectory: true,
       },
-    }, { test: /\.css$/, include: dir, loader: 'style!css?importLoaders=1' });
+    }, { test: /\.css$/, include: [dir, /flexboxgrid/], loader: 'style!css?importLoaders=1' });
     return webpackConfig;
   },
 };

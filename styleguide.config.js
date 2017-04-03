@@ -11,8 +11,8 @@ module.exports = {
     {
       name: 'UI Components',
       // content: 'docs/ui.md',
-      components: './src/react-ecwid-ui-kit/components/**/*.js'
-    }
+      components: './src/react-ecwid-ui-kit/components/**/*.js',
+    },
   ],
   styleguideDir: 'docs',
   updateWebpackConfig(webpackConfig) {
@@ -28,7 +28,9 @@ module.exports = {
           // directory for faster rebuilds.
         cacheDirectory: true,
       },
-    }, { test: /\.css$/, include: [dir, /flexboxgrid/], loader: 'style!css?importLoaders=1' });
+    },
+    { test: /\.css$/, include: [dir, /flexboxgrid/], loader: 'style!css?importLoaders=1' },
+    { test: /\.svg$/, include: dir, loader: 'file', query: { name: 'static/media/[name].[hash:8].[ext]' } });
     return webpackConfig;
   },
 };

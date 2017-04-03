@@ -8,7 +8,8 @@ import CheckBox from './Checkbox';
 import Select from './Select';
 import Icon from './Icon';
 import Link from './Link';
-import Grid from './Grid'
+import Grid from './Grid';
+import Modal from './Modal';
 
 
 document.body.className += ' normalized';
@@ -21,4 +22,6 @@ export {
     Select,
     Icon,
     Link,
+    Grid,
+    Modal,
 };

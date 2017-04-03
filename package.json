@@ -43,6 +43,7 @@
     "react-dev-utils": "^0.5.2",
     "react-styleguidist": "^4.6.3",
     "style-loader": "0.13.1",
+    "svg-inline-loader": "^0.7.1",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
@@ -55,7 +56,10 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-flexbox-grid": "^1.0.2",
-    "react-syntax-highlighter": "^5.0.0"
+    "react-inlinesvg": "^0.5.5",
+    "react-modal": "^1.7.3",
+    "react-syntax-highlighter": "^5.0.0",
+    "recompose": "^0.22.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -89,10 +93,5 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   }
 }

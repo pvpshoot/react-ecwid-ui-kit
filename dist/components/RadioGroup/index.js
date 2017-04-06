@@ -12,7 +12,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _ramda = require('ramda');
 
-var _Radio = require('./Radio');
+var _Radio = require('../Radio');
 
 var _Radio2 = _interopRequireDefault(_Radio);
 

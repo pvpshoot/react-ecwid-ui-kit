@@ -10,14 +10,13 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Link(props, x) {
+function Link(props) {
   var href = props.href,
       children = props.children,
       disabled = props.disabled,
       inverse = props.inverse;
 
 
-  console.log(x);
   var getDisabledClass = function getDisabledClass(b) {
     return b ? 'disabled' : '';
   };

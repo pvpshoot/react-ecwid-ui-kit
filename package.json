@@ -64,7 +64,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "build:module": "babel ./src/react-ecwid-ui-kit --out-dir ./dist",
+    "build:module": "babel ./src/react-ecwid-ui-kit --out-dir ./dist --copy-files --ignore *.md",
     "test": "node scripts/test.js --env=jsdom",
     "npm:publish": "cd ./dist && yarn publish",
     "styleguide": "styleguidist server './src/react-ecwid-ui-kit/components/**/*.js'",
